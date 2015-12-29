@@ -1,5 +1,8 @@
 System.config({
-  defaultJSExtensions: true,
-  transpiler: false,
-  paths: {}
+    packages: {        
+        src: {
+            format: 'register',
+            defaultExtension: 'js'
+        }
+    }
 });
