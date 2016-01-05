@@ -51,7 +51,10 @@ function filePath2moduleName(filePath) {
 }
 
 function onlyAppFiles(filePath) {
-  return /^\/base\/src\/\w+\.js$/.test(filePath)
+    var endsWith = function (str, suffix) {
+        return str.indexOf(suffix, str.length - suffix.length) !== -1;
+    }
+    return /^\/base\/src\/.*\.js$/.test(filePath) && !endsWith(filePath, "spec.js");
 }
 
 function onlySpecFiles(path) {
