@@ -1,9 +1,8 @@
 {
-  "name": "karma-test",
+  "name": "angular2-systemjs-karma-typescript",
   "version": "1.0.0",
-  "description": "",
-  "author": "",
-  "license": "ISC",
+  "description": "Seed project for an app using angular2, systemjs, karma and typescript",
+  "author": "Philip Steinebrunner",
   "devDependencies": {
     "angular2": "^2.0.0-beta.0",
     "gulp": "^3.9.0",
