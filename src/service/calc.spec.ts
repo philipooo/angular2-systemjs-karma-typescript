@@ -1,4 +1,4 @@
-import {calc} from "./app";
+import {calc} from "./calc";
 
 describe("Wenn zwei Zahlen übergeben werden", function() {
 
