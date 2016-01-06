@@ -1,25 +1,39 @@
 import {calc} from "./calc";
 
-describe("Wenn zwei Zahlen übergeben werden", function() {
+describe("Calc", () => {
 
-   it("dann wird die Summe dieser Zahlen zurück gegeben", function() {
-      const expected = 2;
-      const actual = calc(1, 1);
+    describe("When two numbers are passed to calc", function() {
 
-      expect(actual).toBe(expected);
+        it("should return the sum", function() {
 
-   });
+            // Arrange
+            const expected = 2;
 
-});
+            // Act
+            const actual = calc(1, 1);
 
-describe("Wenn als erster Parameter eine 2 übergeben wird", function() {
+            // Assert
+            expect(actual).toBe(expected);
 
-   it("dann wird 9000 zurück gegeben", function() {
-      const expected = 9000;
-      const actual = calc(2, 1);
+        });
 
-      expect(actual).toBe(expected);
+    });
 
-   });
+    describe("When the first number is 2", function() {
+
+        it("should return 9000", function() {
+
+            // Arrange
+            const expected = 9000;
+
+            // Act
+            const actual = calc(2, 1);
+
+            // Assert
+            expect(actual).toBe(expected);
+
+        });
+
+    });
 
 });
