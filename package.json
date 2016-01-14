@@ -4,21 +4,21 @@
   "description": "Seed project for an app using angular2, systemjs, karma and typescript",
   "author": "Philip Steinebrunner",
   "dependencies": {
-    "angular2": "^2.0.0-beta.0",
-    "rxjs": "^5.0.0-beta.0",
-    "systemjs": "^0.19.9"      
+    "angular2": "2.0.0-beta.0",
+    "rxjs": "5.0.0-beta.0",
+    "systemjs": "0.19.9"      
   },
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-typescript": "^2.10.0",
-    "jasmine": "^2.4.1",
-    "karma": "^0.13.15",
-    "karma-chrome-launcher": "^0.2.2",
-    "karma-coverage": "^0.5.3",
-    "karma-jasmine": "^0.3.6",
-    "karma-phantomjs-launcher": "^0.2.1",
-    "phantomjs": "^1.9.19",
-    "remap-istanbul": "^0.5.1"
+    "gulp": "3.9.0",
+    "gulp-sourcemaps": "1.6.0",
+    "gulp-typescript": "2.10.0",
+    "jasmine": "2.4.1",
+    "karma": "0.13.15",
+    "karma-chrome-launcher": "0.2.2",
+    "karma-coverage": "0.5.3",
+    "karma-jasmine": "0.3.6",
+    "karma-phantomjs-launcher": "0.2.1",
+    "phantomjs": "1.9.19",
+    "remap-istanbul": "0.5.1"
   }
 }
