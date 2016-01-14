@@ -53,6 +53,7 @@ module.exports = function (wallaby) {
                     'rxjs/*': 'node_modules/rxjs/*.js'
                 },
                 meta: {
+                    // http://wallabyjs.com/docs/integration/systemjs.html
                     'src/**/*.spec.js': {
                         scriptLoad: true,
                         format: 'register'
