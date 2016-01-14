@@ -21,6 +21,7 @@
     "karma-phantomjs-launcher": "0.2.1",
     "phantomjs": "1.9.19",
     "phantomjs2-ext": "0.1.0",
-    "remap-istanbul": "0.5.1"
+    "remap-istanbul": "0.5.1",
+    "typescript": "1.7.5"
   }
 }
