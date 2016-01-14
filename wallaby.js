@@ -50,7 +50,7 @@ module.exports = function (wallaby) {
                 defaultJSExtensions: true,
                 paths: {
                     'angular2/*': 'node_modules/angular2/*.js',
-                    'rx': 'node_modules/angular2/node_modules/rx/dist/rx.js'
+                    'rxjs/*': 'node_modules/rxjs/*.js'
                 },
                 meta: {
                     'src/**/*.spec.js': {
