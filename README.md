@@ -24,3 +24,8 @@ Results are mapped back to the Typescript files and are stored in `build/istanbu
 
 ##Wallaby.js
 If you use the awesome [wallabyjs](http://wallabyjs.com/) test runner (I do for Visual Studio Code) there is already a preconfigured wallaby.js file. So you get instant inline test feedback.
+
+#FAQ
+
+##Why no jspm?
+jspm just adds small value for me. I don't need to pull modules from Github or Bower. All I need I get directly from npm. The automatic configuration of systemjs can done by hand. The most reason I don't use it is because of Visual Studio Code does not provide code completion if angular2 is placed in `jspm_packages/npm` instead of `node_modules`.
