@@ -54,7 +54,7 @@ module.exports = function (wallaby) {
                 },
                 meta: {
                     // http://wallabyjs.com/docs/integration/systemjs.html
-                    'src/**/*.spec.js': {
+                    'src/*': {
                         scriptLoad: true,
                         format: 'register'
                     }
@@ -71,12 +71,7 @@ module.exports = function (wallaby) {
                     browser_adapter.BrowserDomAdapter.makeCurrent();
                 })
                 .then(function () {
-                    return Promise.all(promises).then(function (loadedTests) {
-                    // Angular 2 exports main function from tests, so let's call it
-                    loadedTests.forEach(function (test) {
-                        test.main && test.main();
-                    });
-
+                    return Promise.all(promises).then(function () {
                     // starting wallaby test run when everything required is loaded
                     wallaby.start();
                     });
