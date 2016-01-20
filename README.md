@@ -23,7 +23,7 @@ For building
 Results are mapped back to the Typescript files and are stored in `build/istanbul-html-report/index.html`.
 
 ##Wallaby.js
-If you use the awesome [wallabyjs](http://wallabyjs.com/) test runner (I do for Visual Studio Code) there is already a preconfigured wallaby.js file. So you get instant inline test feedback.
+If you use the awesome [wallaby.js](http://wallabyjs.com/) test runner (I do for Visual Studio Code) there is already a preconfigured wallaby.js file. So you get instant inline test feedback.
 
 #FAQ
 
