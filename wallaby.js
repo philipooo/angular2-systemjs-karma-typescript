@@ -20,7 +20,7 @@ module.exports = function (wallaby) {
         ],
 
         env: {
-            runner: "node_modules/phantomjs2-ext/lib/phantom/phantomjs"
+            runner: require('phantomjs2-ext').path
         },
 
         debug: true,
