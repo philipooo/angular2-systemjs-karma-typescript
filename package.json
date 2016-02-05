@@ -4,7 +4,7 @@
   "description": "Seed project for an app using angular2, systemjs, karma and typescript",
   "author": "Philip Steinebrunner",
   "dependencies": {
-    "angular2": "2.0.0-beta.1",
+    "angular2": "2.0.0-beta.3",
     "rxjs": "5.0.0-beta.1",
     "systemjs": "0.19.16"
   },

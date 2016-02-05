@@ -1,3 +1,4 @@
+import { describe, it, expect } from "angular2/testing";
 import {calc} from "./calc";
 
 describe("Calc", () => {

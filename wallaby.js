@@ -1,3 +1,5 @@
+/* global __dirname */
+/* global System */
 module.exports = function (wallaby) {
   
     wallaby.defaults.files.instrument = false;
@@ -66,16 +68,20 @@ module.exports = function (wallaby) {
                 promises.push(System['import'](wallaby.tests[i].replace(/\.ts$/, '')));
             }
 
-            System.import('angular2/src/platform/browser/browser_adapter')
-                .then(function (browser_adapter) {
-                    browser_adapter.BrowserDomAdapter.makeCurrent();
-                })
-                .then(function () {
-                    return Promise.all(promises).then(function () {
+            System.import('angular2/testing').then(function(angularTesting) {
+                return System.import('angular2/platform/testing/browser').then(function(angularPlatformTestingBrowser) {
+                    angularTesting.setBaseTestProviders(
+                        angularPlatformTestingBrowser.TEST_BROWSER_PLATFORM_PROVIDERS,
+                        angularPlatformTestingBrowser.TEST_BROWSER_APPLICATION_PROVIDERS
+                    );        
+                });
+            })
+            .then(function () {
+                return Promise.all(promises).then(function () {
                     // starting wallaby test run when everything required is loaded
                     wallaby.start();
-                    });
                 });
+            });
         }
     };
 };
