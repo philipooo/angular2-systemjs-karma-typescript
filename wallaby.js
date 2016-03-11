@@ -21,10 +21,6 @@ module.exports = function (wallaby) {
             { pattern: 'src/**/*.spec.ts', load: false }
         ],
 
-        env: {
-            runner: require('phantomjs2-ext').path
-        },
-
         debug: true,
 
         compilers: {

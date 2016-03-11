@@ -21,9 +21,8 @@
     "karma-chrome-launcher": "0.2.2",
     "karma-coverage": "0.5.3",
     "karma-jasmine": "0.3.6",
-    "karma-phantomjs-launcher": "0.2.1",
-    "phantomjs": "1.9.19",
-    "phantomjs2-ext": "0.1.0",
+    "karma-phantomjs-launcher": "1.0.0",
+    "phantomjs-prebuilt": "2.1.5",
     "remap-istanbul": "0.5.1",
     "typescript": "1.8.2",
     "typings":"0.6.8"
